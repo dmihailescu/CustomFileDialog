@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="VideoManager.TargetControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="400" Loaded="Control_Loaded">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+        <!--<Border Margin="0,0,0,0" Name="border1" BorderBrush="BlueViolet" BorderThickness="10" Panel.ZIndex="100"/> -->
+        <TabControl SelectionChanged="TabControl_SelectionChanged">
+            <TabItem Name="Profile" Header="Profile" >
+                <StackPanel VerticalAlignment="Center">
+                    <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                        <CheckBox Name="CheckBox_TwoPass" Margin="0,10,0,10" >Enable 2 pass encoding</CheckBox>
+
+
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical">
+                        <TextBox Name="ProfileFile" HorizontalAlignment="Stretch"></TextBox>
+                        <Button Name="SelectProfile" Margin="0,10,0,10" Click="SelectProfile_Click" Width="100" HorizontalAlignment="Right" Initialized="SelectProfile_Initialized">Select Profile</Button>
+
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical">
+                        <Label>Preprocessing:</Label>
+                        <ComboBox Name="ComboBox_PreProc" HorizontalAlignment="Stretch" SelectionChanged="ComboBox_PreProc_SelectionChanged"></ComboBox>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Name="Information" Header="Information">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                    <Label>Title:</Label>
+                    <TextBox Name="TextBox_Title" HorizontalAlignment="Stretch"></TextBox>
+                    <Label>Description:</Label>
+                    <TextBox Name="TextBox_Description" HorizontalAlignment="Stretch"></TextBox>
+                    <Label>Author:</Label>
+                    <TextBox Name="TextBox_Author" HorizontalAlignment="Stretch"></TextBox>
+                    <Label>Copyright:</Label>
+                    <TextBox Name="TextBox_Copyright" HorizontalAlignment="Stretch"></TextBox>
+                </StackPanel>
+
+
+            </TabItem>
+            <TabItem Name="Cropping" Header="Cropping">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Name="row1" />
+                        <RowDefinition Name="row2" />
+                        <RowDefinition Name="row3" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Name="col1" OverridesDefaultStyle="True" />
+                        <ColumnDefinition Name="col2" />
+                        <ColumnDefinition Name="col3" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
+                        <Label>Top:</Label>
+                        <TextBox Name="Text_Top"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">
+                        <Label>Left:</Label>
+                        <TextBox Name="Text_Left"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Center">
+                        <Label>Right:</Label>
+                        <TextBox Name="Text_Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+                        <Label>Bottom:</Label>
+                        <TextBox Name="Text_Bottom"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+
+                        <CheckBox Name="CheckBox_Crop" Content="Use Cropping" HorizontalAlignment="Center" Checked="CheckBox_Crop_Checked" />
+
+                    </StackPanel>
+                </Grid>
+
+            </TabItem>
+            <!--<TabItem Name="Preprocessing" Header="Preprocessing" Initialized="Preprocessing_Initialized" /> -->
+
+
+            <TabItem Name="DRMProfile" Header="DRMProfile" >
+                <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" VerticalAlignment="Center">
+                    <Label>DRM Profile:</Label>
+                    <ComboBox Name="ComboBox_DRMProfile" HorizontalAlignment="Stretch"></ComboBox>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>
