@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBFileDlgExtenders_V12", "FileDlgExtenders\VBFileDlgExtenders_V12.vbproj", "{F5135B22-C4FD-4C02-9A38-4DADCA847724}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBCustomOpenFileDialog_V12", "VBCustomOpenFileDialog_V12.vbproj", "{D9D8982A-399A-4EB7-8DF5-EBDED7D866A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F5135B22-C4FD-4C02-9A38-4DADCA847724} = {F5135B22-C4FD-4C02-9A38-4DADCA847724}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBWpfCustomFileDialog_V12", "WpfCustomFileDialog\VBWpfCustomFileDialog_V12.vbproj", "{739696ED-11C6-4418-9A44-50F70179E32B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBVideoManager_v12", "VideoManager\VBVideoManager_v12.vbproj", "{D5E5EE0C-8599-4335-B296-8F80712D35C6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs04
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FileDlgExtenders\\VBFileDlgExtenders_V12.vbproj
+		SccProjectName1 = FileDlgExtenders
+		SccLocalPath1 = FileDlgExtenders
+		SccProjectUniqueName2 = VBCustomOpenFileDialog_V12.vbproj
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = VideoManager\\VBVideoManager_v12.vbproj
+		SccProjectName3 = VideoManager
+		SccLocalPath3 = VideoManager
+		SccProjectUniqueName4 = WpfCustomFileDialog\\VBWpfCustomFileDialog_V12.vbproj
+		SccProjectName4 = WpfCustomFileDialog
+		SccLocalPath4 = WpfCustomFileDialog
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5135B22-C4FD-4C02-9A38-4DADCA847724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5135B22-C4FD-4C02-9A38-4DADCA847724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5135B22-C4FD-4C02-9A38-4DADCA847724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5135B22-C4FD-4C02-9A38-4DADCA847724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D8982A-399A-4EB7-8DF5-EBDED7D866A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D8982A-399A-4EB7-8DF5-EBDED7D866A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D8982A-399A-4EB7-8DF5-EBDED7D866A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D8982A-399A-4EB7-8DF5-EBDED7D866A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739696ED-11C6-4418-9A44-50F70179E32B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739696ED-11C6-4418-9A44-50F70179E32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739696ED-11C6-4418-9A44-50F70179E32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739696ED-11C6-4418-9A44-50F70179E32B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E5EE0C-8599-4335-B296-8F80712D35C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E5EE0C-8599-4335-B296-8F80712D35C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E5EE0C-8599-4335-B296-8F80712D35C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E5EE0C-8599-4335-B296-8F80712D35C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
