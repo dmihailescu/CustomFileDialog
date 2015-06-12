@@ -1,0 +1,45 @@
+﻿<src:ControlAddOnBase x:Class="VideoManager.SelectControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:WpfCustomFileDialog;assembly=WpfCustomFileDialog"
+    Height="300" Width="300" Loaded="Control_Loaded">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+<!--<Border Margin="0,0,0,0" Name="border1" BorderBrush="BlueViolet" BorderThickness="5" Panel.ZIndex="100"/> -->
+        <StackPanel VerticalAlignment="Stretch" >
+            <MediaElement VerticalAlignment="Top" Name="_Media" LoadedBehavior="Manual" Margin="0,10,0,0" Width="256" Height="144" MediaFailed="_Media_MediaFailed" MediaOpened="_Media_MediaOpened" Loaded="_Media_Loaded" Unloaded="_Media_Unloaded" MediaEnded="_Media_MediaEnded"/>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                <Slider Name="TimeSlider" HorizontalAlignment="Stretch" Width="250" Margin="10,0,10,0" ValueChanged="TimeSlider_ValueChanged"  PreviewMouseUp="TimeSlider_PreviewMouseUp" PreviewMouseDown="TimeSlider_PreviewMouseDown"></Slider>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Button Content="Play" Margin="0,0,10,0" 
+                Padding="5" Click="mediaPlay" Name="_playButton" />
+                <Button x:Name="_muteButt" Content="Mute" 
+                Padding="5" Click="mediaMute" />
+                <Label Name="speedLabel" Margin="0,0,10,0">Speed:</Label>
+                <ComboBox x:Name="_comboSpeed"  MinWidth="30" Margin="0,0,10,0" Height=" 30" SelectedIndex="1" SelectionChanged="comboSpeed_SelectionChanged">
+                    <ComboBoxItem>.5</ComboBoxItem>
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>8</ComboBoxItem>
+                    <ComboBoxItem>16</ComboBoxItem>
+                    <ComboBoxItem>32</ComboBoxItem>
+                    <ComboBoxItem>64</ComboBoxItem>
+                </ComboBox>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Margin="0,0,10,0">Display Size:</Label>
+                <Label Margin="0,0,10,0" Name="_size"></Label>
+                <Label Margin="0,0,10,0">Duration:</Label>
+                <Label Name="_duration" Margin="0,0,10,0"></Label>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Margin="0,0,10,0">File Size:</Label>
+                <Label Margin="0,0,10,0" Name="_fsize"></Label>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</src:ControlAddOnBase>

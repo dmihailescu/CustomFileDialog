@@ -1,0 +1,52 @@
+﻿<Window x:Class="VideoManager.Manager"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Video Convertor" Height="314" Width="300" Loaded="Window_Loaded" VerticalAlignment="Stretch">
+    <Grid VerticalAlignment="Stretch">
+        <StackPanel Margin="0,0,0,35">
+            <TabControl VerticalAlignment="Stretch">
+                <TabItem Header="Windows">
+                    <StackPanel>
+                        <StackPanel Name="splMain" >
+                            <StackPanel Name="Source" Orientation="Vertical" Margin="0,10,0,0" HorizontalAlignment="Stretch">
+                                <Button Content="Select the source...." Margin="0,0,10,0" Padding="5" Click="btnSource_Click" HorizontalAlignment="Right" />
+                                <TextBox Name="txtSource" Margin="0,0,10,0" Padding="5" TextChanged="TextChanged" IsReadOnly="True"></TextBox>
+                            </StackPanel>
+                            <StackPanel Name="Destination" Orientation="Vertical" Margin="0,10,0,0" HorizontalAlignment="Stretch">
+                                <Button Name="btnOutput" Margin="0,0,10,0"  HorizontalAlignment="Right" Padding="5" Click="btnTarget_Click" Content="Select the output..." />
+                                <TextBox Name="txtDest" Margin="0,0,10,0" Padding="5" TextChanged="TextChanged"  IsReadOnly="True"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="0,10,0,0" HorizontalAlignment="Stretch">
+                                <Button Name="btnConvert" Click="btnConvert_Click" Padding="5" HorizontalAlignment="Right" Margin="0,0,10,0" IsEnabled="False">Convert</Button>
+                            </StackPanel>
+                            <Label>This tab is using windows for FileDialog</Label>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </TabItem>
+                <TabItem Header="Controls">
+                    <StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="0,10,0,0" HorizontalAlignment="Stretch">
+                            <Button Name="btSourceControl" Click="btnControl_Click" Padding="5" HorizontalAlignment="Right" Margin="0,0,10,0">Select the Ctrl source....</Button>
+                            <TextBox Name="txtSourceCtrl" Margin="0,0,10,0" Padding="5" TextChanged="Ctrl_TextChanged" IsReadOnly="True"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="0,10,0,0" HorizontalAlignment="Stretch">
+                            <Button Name="btnTargetControl" Click="btnTargetControl_Click" Padding="5" HorizontalAlignment="Right" Margin="0,0,10,0">Select the Ctrl output...</Button>
+                            <TextBox Name="txtDestCtrl" Margin="0,0,10,0" Padding="5" TextChanged="Ctrl_TextChanged" IsReadOnly="True"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="0,10,0,0" HorizontalAlignment="Stretch">
+                            <Button Name="btnConvertCtrl" Click="btnConvertCtrl_Click" Padding="5" HorizontalAlignment="Right" Margin="0,0,10,0" IsEnabled="False">Ctrl Convert</Button>
+                        </StackPanel>
+                        <Label>This tab is using controls for FileDialog</Label>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+        <StackPanel Name="splStatus" VerticalAlignment="Bottom" Margin="0,10,0,0">
+            <StatusBar Name="statusBar1"  HorizontalAlignment="Stretch"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Stretch" >
+                <Label Name="StatusBar"  Padding="5" Margin="0,0,10,0">Ready</Label>
+            </StatusBar>
+        </StackPanel>
+    </Grid>
+</Window>
