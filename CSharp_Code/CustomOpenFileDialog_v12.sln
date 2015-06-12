@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomOpenFileDialog_v12", "CustomOpenFileDialog_v12.csproj", "{63F16AD6-3C52-43BA-A3D7-981AC870E7CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B4DA48C-6D11-46C9-A63D-D369E9C5FE42} = {9B4DA48C-6D11-46C9-A63D-D369E9C5FE42}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDlgExtenders_v12", "FileDlgExtenders\FileDlgExtenders_v12.csproj", "{9B4DA48C-6D11-46C9-A63D-D369E9C5FE42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoManager_12", "VideoManager\VideoManager_12.csproj", "{94A485AE-A65E-43A6-83FD-6EC04655245E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomFileDialog_12", "WpfCustomFileDialog\WpfCustomFileDialog_12.csproj", "{99B4B46D-B52D-4EAF-98EE-C7B398575D90}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs04
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CustomOpenFileDialog_v12.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = FileDlgExtenders\\FileDlgExtenders_v12.csproj
+		SccProjectName2 = FileDlgExtenders
+		SccLocalPath2 = FileDlgExtenders
+		SccProjectUniqueName3 = VideoManager\\VideoManager_12.csproj
+		SccProjectName3 = VideoManager
+		SccLocalPath3 = VideoManager
+		SccProjectUniqueName4 = WpfCustomFileDialog\\WpfCustomFileDialog_12.csproj
+		SccProjectName4 = WpfCustomFileDialog
+		SccLocalPath4 = WpfCustomFileDialog
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63F16AD6-3C52-43BA-A3D7-981AC870E7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F16AD6-3C52-43BA-A3D7-981AC870E7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F16AD6-3C52-43BA-A3D7-981AC870E7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F16AD6-3C52-43BA-A3D7-981AC870E7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B4DA48C-6D11-46C9-A63D-D369E9C5FE42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4DA48C-6D11-46C9-A63D-D369E9C5FE42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B4DA48C-6D11-46C9-A63D-D369E9C5FE42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B4DA48C-6D11-46C9-A63D-D369E9C5FE42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A485AE-A65E-43A6-83FD-6EC04655245E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A485AE-A65E-43A6-83FD-6EC04655245E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A485AE-A65E-43A6-83FD-6EC04655245E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A485AE-A65E-43A6-83FD-6EC04655245E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B4B46D-B52D-4EAF-98EE-C7B398575D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B4B46D-B52D-4EAF-98EE-C7B398575D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B4B46D-B52D-4EAF-98EE-C7B398575D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B4B46D-B52D-4EAF-98EE-C7B398575D90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
